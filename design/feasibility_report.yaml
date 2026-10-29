@@ -1,0 +1,1138 @@
+robot: humanoid
+actuator_checks:
+  classes:
+    L:
+      anchor: null
+      category: null
+      designed_from: torque_gear
+      gear_ratio: 80.0
+      gear_source: declared
+      effort_Nm: 450.0
+      velocity_rad_s: 3.743846
+      mass_kg: 3.821061
+      radius_m: 0.063842
+      length_m: 0.112523
+      volume_cm3: 1440.82
+      aspect_LD: 0.8813
+      aspect_source: population_fit
+      density_kg_m3: 2652.0
+      rotor_inertia_kgm2: 0.000451071413
+      rotor_inertia_from: areal(k*r^4)
+      armature_kgm2: 2.886857042
+      torque_density_Nm_per_kg: 117.8
+      power_density_W_per_kg: 110.2
+      peak_power_W: 421.2
+      frontier_tau_max_Nm: 1106.0
+      overridden_by_law:
+      - param: L_motor_velocity
+        declared: 5.864306286700947
+        derived: 3.74384646
+    M:
+      anchor: null
+      category: null
+      designed_from: torque_gear
+      gear_ratio: 50.0
+      gear_source: declared
+      effort_Nm: 220.0
+      velocity_rad_s: 5.818666
+      mass_kg: 2.372115
+      radius_m: 0.056935
+      length_m: 0.09277
+      volume_cm3: 944.76
+      aspect_LD: 0.8147
+      aspect_source: population_fit
+      density_kg_m3: 2510.82
+      rotor_inertia_kgm2: 0.000285322143
+      rotor_inertia_from: areal(k*r^4)
+      armature_kgm2: 0.713305357
+      torque_density_Nm_per_kg: 92.7
+      power_density_W_per_kg: 134.9
+      peak_power_W: 320.0
+      frontier_tau_max_Nm: 1106.0
+      overridden_by_law:
+      - param: M_motor_velocity
+        declared: 10.262536001726657
+        derived: 5.81866558
+    S:
+      anchor: null
+      category: null
+      designed_from: torque_gear
+      gear_ratio: 40.0
+      gear_source: declared
+      effort_Nm: 80.0
+      velocity_rad_s: 7.173719
+      mass_kg: 1.209072
+      radius_m: 0.045105
+      length_m: 0.075603
+      volume_cm3: 483.22
+      aspect_LD: 0.8381
+      aspect_source: population_fit
+      density_kg_m3: 2502.14
+      rotor_inertia_kgm2: 0.000112387628
+      rotor_inertia_from: areal(k*r^4)
+      armature_kgm2: 0.179820204
+      torque_density_Nm_per_kg: 66.2
+      power_density_W_per_kg: 118.7
+      peak_power_W: 143.5
+      frontier_tau_max_Nm: 1106.0
+      overridden_by_law:
+      - param: S_motor_velocity
+        declared: 11.519173063162574
+        derived: 7.17371918
+  errors: []
+  warnings:
+  - 'head_link_link: the 1.262 kg already in the segment exceeds the head trend''s
+    0.053 kg, so the member is floored at 5% of the target'
+  - "left_ankle_link_link: to weigh its 0.185 kg share of the foot trend inside the\
+    \ actuators it joins, the member's density is 2286 kg/m\xB3 against the class's\
+    \ 301"
+  - 'left_hand_link_link: the 0.299 kg already in the segment exceeds the hand trend''s
+    0.281 kg, so the member is floored at 5% of the target'
+  - "left_lower_hip_link_link: to weigh its 0.451 kg share of the hip_link trend inside\
+    \ the actuators it joins, the member's density is 1771 kg/m\xB3 against the class's\
+    \ 406"
+  - "left_lower_shoulder_link_link: to weigh its 0.336 kg share of the shoulder_link\
+    \ trend inside the actuators it joins, the member's density is 1320 kg/m\xB3 against\
+    \ the class's 345"
+  - "left_lower_wrist_link_link: to weigh its 0.252 kg share of the wrist_link trend\
+    \ inside the actuators it joins, the member's density is 4762 kg/m\xB3 against\
+    \ the class's 630"
+  - "left_upper_shoulder_link_link: to weigh its 0.252 kg share of the shoulder_link\
+    \ trend inside the actuators it joins, the member's density is 1159 kg/m\xB3 against\
+    \ the class's 345"
+  - "left_upper_wrist_link_link: to weigh its 0.173 kg share of the wrist_link trend\
+    \ inside the actuators it joins, the member's density is 1848 kg/m\xB3 against\
+    \ the class's 630"
+  - "lower_core_link_link: to weigh its 1.028 kg share of the waist_link trend inside\
+    \ the actuators it joins, the member's density is 8612 kg/m\xB3 against the class's\
+    \ 504"
+  - "pelvis_link_link: to weigh its 2.787 kg share of the torso trend inside the actuators\
+    \ it joins, the member's density is 8717 kg/m\xB3 against the class's 716"
+  - "right_ankle_link_link: to weigh its 0.185 kg share of the foot trend inside the\
+    \ actuators it joins, the member's density is 2286 kg/m\xB3 against the class's\
+    \ 301"
+  - 'right_hand_link_link: the 0.299 kg already in the segment exceeds the hand trend''s
+    0.281 kg, so the member is floored at 5% of the target'
+  - "right_lower_hip_link_link: to weigh its 0.451 kg share of the hip_link trend\
+    \ inside the actuators it joins, the member's density is 1771 kg/m\xB3 against\
+    \ the class's 406"
+  - "right_lower_shoulder_link_link: to weigh its 0.336 kg share of the shoulder_link\
+    \ trend inside the actuators it joins, the member's density is 1320 kg/m\xB3 against\
+    \ the class's 345"
+  - "right_lower_wrist_link_link: to weigh its 0.252 kg share of the wrist_link trend\
+    \ inside the actuators it joins, the member's density is 4762 kg/m\xB3 against\
+    \ the class's 630"
+  - "right_upper_shoulder_link_link: to weigh its 0.252 kg share of the shoulder_link\
+    \ trend inside the actuators it joins, the member's density is 1159 kg/m\xB3 against\
+    \ the class's 345"
+  - "right_upper_wrist_link_link: to weigh its 0.173 kg share of the wrist_link trend\
+    \ inside the actuators it joins, the member's density is 1848 kg/m\xB3 against\
+    \ the class's 630"
+  - "torso_roll_link_link: to weigh its 0.618 kg share of the waist_link trend inside\
+    \ the actuators it joins, the member's density is 5176 kg/m\xB3 against the class's\
+    \ 504"
+  - "upper_core_link_link: to weigh its 0.619 kg share of the waist_link trend inside\
+    \ the actuators it joins, the member's density is 5121 kg/m\xB3 against the class's\
+    \ 504"
+segment_densities:
+  population: humanoid
+  derived:
+    head_rho:
+      segment: head
+      rho_kg_m3: 301.204
+      measured_p10_p90:
+      - 191.30187
+      - 449.76193
+      n: 16
+      source: humanoid head structural effective density (datasets/robot_descriptions)
+      declared: 449.0
+    hand_rho:
+      segment: hand
+      rho_kg_m3: 571.415
+      measured_p10_p90:
+      - 131.05235
+      - 1385.49064
+      n: 28
+      source: humanoid hand structural effective density (datasets/robot_descriptions)
+      declared: 503.5
+    foot_rho:
+      segment: foot
+      rho_kg_m3: 301.466
+      measured_p10_p90:
+      - 19.86578
+      - 646.66318
+      n: 42
+      source: humanoid foot structural effective density (datasets/robot_descriptions)
+      declared: 286.2
+    thigh_rho:
+      segment: thigh
+      rho_kg_m3: 782.211
+      measured_p10_p90:
+      - 436.97289
+      - 1266.22869
+      n: 54
+      source: humanoid thigh structural effective density (datasets/robot_descriptions)
+      declared: 803.0
+    shank_rho:
+      segment: shank
+      rho_kg_m3: 532.876
+      measured_p10_p90:
+      - 124.59936
+      - 1457.00632
+      n: 50
+      source: humanoid shank structural effective density (datasets/robot_descriptions)
+      declared: 524.0
+    upper_arm_rho:
+      segment: upper_arm
+      rho_kg_m3: 447.599
+      measured_p10_p90:
+      - 143.24423
+      - 1132.91363
+      n: 30
+      source: humanoid upper_arm structural effective density (datasets/robot_descriptions)
+      declared: 430.7
+    forearm_rho:
+      segment: forearm
+      rho_kg_m3: 783.699
+      measured_p10_p90:
+      - 35.61518
+      - 1222.80503
+      n: 36
+      source: humanoid forearm structural effective density (datasets/robot_descriptions)
+      declared: 908.4
+    torso_rho:
+      segment: torso
+      rho_kg_m3: 715.759
+      measured_p10_p90:
+      - 475.54362
+      - 1215.32694
+      n: 13
+      source: humanoid torso structural effective density (datasets/robot_descriptions)
+      declared: 650.0
+      volume_convention:
+        measured_rho_kg_m3: 715.76
+        mesh_volume_m3: 0.022738
+        inertia_box_volume_m3: 0.021815
+        shape_factor: 0.9594
+        applied_rho_kg_m3: 686.7
+        why: the measured density is mass / inertia-equivalent-box volume; the emitted
+          geom is charged on MESH volume, so the ratio is applied to keep the mass
+          the measurement implies
+  warnings: []
+actuator_mass_audit:
+  n_joints: 29
+  charged_by_motor_law_kg: 92.2409
+  emitted_motor_geom_kg: 92.2409
+  emitted_over_charged: 1.0
+actuator_packing:
+  n_actuator_geoms: 28
+  n_exempt: 0
+  n_overlapping_pairs: 0
+  n_neutral_pose_pairs: 0
+  worst_depth_m: 0.0
+  worst_neutral_pose_depth_m: 0.0
+  tolerance_m: 0.0005
+  tolerance_fraction: 0.02
+  pairs: []
+  neutral_pose_pairs: []
+actuator_in_structure:
+  mesh_volume_cm3: 22738.0
+  inside_cm3: 715.7
+  double_charged_kg: 0.4915
+  actuators:
+  - geom: left_shoulder_pitch_link_motor
+    inside_frac: 0.2482
+    drives: shoulder_pitch
+    inside_cm3: 357.7
+  - geom: right_shoulder_pitch_link_motor
+    inside_frac: 0.2485
+    drives: shoulder_pitch
+    inside_cm3: 358.0
+mass_kg:
+  foot: 2.6047
+  hand: 0.5984
+  head: 1.2617
+  link: 13.5166
+  motor: 92.2409
+  torso: 15.6141
+total_mass_kg: 125.8363
+mass_composition_check:
+  reference_population: humanoid
+  size_metric: z_span_m
+  total_mass_kg: 125.8363471308989
+  by_role_kg:
+    torso: 15.614068023199852
+    link: 13.51660544515762
+    head: 1.2616814120400315
+    motor: 92.24094644443922
+    hand: 0.5983838860621794
+    foot: 2.60466192
+  checks:
+  - quantity: actuator_mass_fraction
+    value: 0.733
+    status: outside_measured_range
+    median: 0.53663
+    p10: 0.4596
+    p90: 0.6411
+    min: 0.39857
+    max: 0.64718
+    n: 29
+    unit: ''
+  - quantity: trunk_mass_fraction
+    value: 0.3261
+    status: ok
+    median: 0.39115
+    p10: 0.30391
+    p90: 0.48611
+    min: 0.26684
+    max: 0.60301
+    n: 29
+    unit: ''
+  - quantity: total_mass_vs_size_kg
+    value: 125.836
+    status: outside_2sigma
+    predicted: 52.121
+    lo_2sigma: 35.113
+    hi_2sigma: 77.368
+    size_m: 1.2904
+    size_metric: z_span_m
+    extrapolated: false
+  trunk_bodies:
+  - head_link
+  - lower_core_link
+  - pelvis_link
+  - torso_link
+  - torso_roll_link
+  - upper_core_link
+distal_taper: null
+link_render:
+  n_links_slimmed: 22
+  structural_link_rho_kg_m3: 0.0
+  drawn_radius_over_structural:
+  - 0.85
+  - 0.85
+  emitted_density_kg_m3:
+  - 0.0
+  - 0.0
+  mass_effect: "none \u2014 density compensates exactly; \u03C1\xB7\u03C0\xB7r\xB2\
+    \xB7L is invariant"
+  inertia_effect: "slimmer cylinders: transverse inertia within a few percent, axial\
+    \ inertia scales with (r_drawn/r_struct)\xB2 and is dominated by the joint armature\
+    \ anyway"
+  links:
+    left_ankle_link_link:
+      r_structural_m: 0.046385
+      r_drawn_m: 0.039427
+      length_m: 0.120778
+    left_forearm_link_link:
+      r_structural_m: 0.045105
+      r_drawn_m: 0.038339
+      length_m: 0.15
+    left_lower_hip_link_link:
+      r_structural_m: 0.056262
+      r_drawn_m: 0.047822
+      length_m: 0.19
+    left_lower_shoulder_link_link:
+      r_structural_m: 0.056262
+      r_drawn_m: 0.047822
+      length_m: 0.19
+    left_lower_wrist_link_link:
+      r_structural_m: 0.037801
+      r_drawn_m: 0.032131
+      length_m: 0.09
+    left_upper_hip_link_link:
+      r_structural_m: 0.056262
+      r_drawn_m: 0.047822
+      length_m: 0.1
+    left_upper_leg_link_link:
+      r_structural_m: 0.056262
+      r_drawn_m: 0.047822
+      length_m: 0.2
+    left_upper_shoulder_link_link:
+      r_structural_m: 0.056262
+      r_drawn_m: 0.047822
+      length_m: 0.13
+    left_upper_wrist_link_link:
+      r_structural_m: 0.037801
+      r_drawn_m: 0.032131
+      length_m: 0.06
+    lower_core_link_link:
+      r_structural_m: 0.056262
+      r_drawn_m: 0.047822
+      length_m: 0.176366
+    pelvis_link_link:
+      r_structural_m: 0.056262
+      r_drawn_m: 0.047822
+      length_m: 0.09
+    right_ankle_link_link:
+      r_structural_m: 0.046385
+      r_drawn_m: 0.039427
+      length_m: 0.120778
+    right_forearm_link_link:
+      r_structural_m: 0.045105
+      r_drawn_m: 0.038339
+      length_m: 0.15
+    right_lower_hip_link_link:
+      r_structural_m: 0.056262
+      r_drawn_m: 0.047822
+      length_m: 0.19
+    right_lower_shoulder_link_link:
+      r_structural_m: 0.056262
+      r_drawn_m: 0.047822
+      length_m: 0.19
+    right_lower_wrist_link_link:
+      r_structural_m: 0.037801
+      r_drawn_m: 0.032131
+      length_m: 0.09
+    right_upper_hip_link_link:
+      r_structural_m: 0.056262
+      r_drawn_m: 0.047822
+      length_m: 0.1
+    right_upper_leg_link_link:
+      r_structural_m: 0.056262
+      r_drawn_m: 0.047822
+      length_m: 0.2
+    right_upper_shoulder_link_link:
+      r_structural_m: 0.056262
+      r_drawn_m: 0.047822
+      length_m: 0.13
+    right_upper_wrist_link_link:
+      r_structural_m: 0.037801
+      r_drawn_m: 0.032131
+      length_m: 0.06
+    torso_roll_link_link:
+      r_structural_m: 0.056262
+      r_drawn_m: 0.047822
+      length_m: 0.069842
+    upper_core_link_link:
+      r_structural_m: 0.056262
+      r_drawn_m: 0.047822
+      length_m: 0.07
+link_inset:
+  n_links_inset: 26
+  removed_fraction_of_length:
+  - 0.2892
+  - 0.932
+  rule: "a structural link stops at its actuator housing face plus a bolt flange,\
+    \ rather than running to the joint centre through the motor \u2014 see core/tree_ops.py:link_span"
+  penetration_m: 0.006
+  scope: "the DISTAL end only: this body's own actuator shares its frame so the overlap\
+    \ is fixed, while the actuator at the proximal end is on the far side of a joint\
+    \ and how much it interpenetrates depends on the angle \u2014 core/packing.py\
+    \ governs that pair instead"
+  links:
+    left_ankle_link_link:
+      joint_to_joint_m: 0.120778
+      structural_m: 0.012
+      removed_m: 0.108778
+      removed_frac: 0.9006
+    left_bicep_link_link:
+      joint_to_joint_m: 0.15
+      structural_m: 0.092158
+      removed_m: 0.057842
+      removed_frac: 0.3856
+    left_forearm_link_link:
+      joint_to_joint_m: 0.15
+      structural_m: 0.022555
+      removed_m: 0.127445
+      removed_frac: 0.8496
+    left_lower_hip_link_link:
+      joint_to_joint_m: 0.19
+      structural_m: 0.025634
+      removed_m: 0.164366
+      removed_frac: 0.8651
+    left_lower_leg_link_link:
+      joint_to_joint_m: 0.2
+      structural_m: 0.084315
+      removed_m: 0.115685
+      removed_frac: 0.5784
+    left_lower_shoulder_link_link:
+      joint_to_joint_m: 0.19
+      structural_m: 0.025634
+      removed_m: 0.164366
+      removed_frac: 0.8651
+    left_lower_wrist_link_link:
+      joint_to_joint_m: 0.09
+      structural_m: 0.01179
+      removed_m: 0.07821
+      removed_frac: 0.869
+    left_upper_hip_link_link:
+      joint_to_joint_m: 0.1
+      structural_m: 0.042158
+      removed_m: 0.057842
+      removed_frac: 0.5784
+    left_upper_leg_link_link:
+      joint_to_joint_m: 0.2
+      structural_m: 0.142158
+      removed_m: 0.057842
+      removed_frac: 0.2892
+    left_upper_shoulder_link_link:
+      joint_to_joint_m: 0.13
+      structural_m: 0.021896
+      removed_m: 0.108104
+      removed_frac: 0.8316
+    left_upper_wrist_link_link:
+      joint_to_joint_m: 0.06
+      structural_m: 0.020895
+      removed_m: 0.039105
+      removed_frac: 0.6518
+    lower_core_link_link:
+      joint_to_joint_m: 0.176366
+      structural_m: 0.012
+      removed_m: 0.164366
+      removed_frac: 0.932
+    pelvis_link_link:
+      joint_to_joint_m: 0.09
+      structural_m: 0.032158
+      removed_m: 0.057842
+      removed_frac: 0.6427
+    right_ankle_link_link:
+      joint_to_joint_m: 0.120778
+      structural_m: 0.012
+      removed_m: 0.108778
+      removed_frac: 0.9006
+    right_bicep_link_link:
+      joint_to_joint_m: 0.15
+      structural_m: 0.092158
+      removed_m: 0.057842
+      removed_frac: 0.3856
+    right_forearm_link_link:
+      joint_to_joint_m: 0.15
+      structural_m: 0.022555
+      removed_m: 0.127445
+      removed_frac: 0.8496
+    right_lower_hip_link_link:
+      joint_to_joint_m: 0.19
+      structural_m: 0.025634
+      removed_m: 0.164366
+      removed_frac: 0.8651
+    right_lower_leg_link_link:
+      joint_to_joint_m: 0.2
+      structural_m: 0.084315
+      removed_m: 0.115685
+      removed_frac: 0.5784
+    right_lower_shoulder_link_link:
+      joint_to_joint_m: 0.19
+      structural_m: 0.025634
+      removed_m: 0.164366
+      removed_frac: 0.8651
+    right_lower_wrist_link_link:
+      joint_to_joint_m: 0.09
+      structural_m: 0.01179
+      removed_m: 0.07821
+      removed_frac: 0.869
+    right_upper_hip_link_link:
+      joint_to_joint_m: 0.1
+      structural_m: 0.042158
+      removed_m: 0.057842
+      removed_frac: 0.5784
+    right_upper_leg_link_link:
+      joint_to_joint_m: 0.2
+      structural_m: 0.142158
+      removed_m: 0.057842
+      removed_frac: 0.2892
+    right_upper_shoulder_link_link:
+      joint_to_joint_m: 0.13
+      structural_m: 0.021896
+      removed_m: 0.108104
+      removed_frac: 0.8316
+    right_upper_wrist_link_link:
+      joint_to_joint_m: 0.06
+      structural_m: 0.020895
+      removed_m: 0.039105
+      removed_frac: 0.6518
+    torso_roll_link_link:
+      joint_to_joint_m: 0.069842
+      structural_m: 0.012
+      removed_m: 0.057842
+      removed_frac: 0.8282
+    upper_core_link_link:
+      joint_to_joint_m: 0.07
+      structural_m: 0.012158
+      removed_m: 0.057842
+      removed_frac: 0.8263
+structural_links:
+  head_link_link:
+    class: head
+    basis: 'm = 2.497 L^0.635 (n=16), mass per metre held at its 0.019 m value: L=0.005
+      m is outside the fitted 0.0191-0.2943 m'
+    segment_root: torso_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.005
+    lambda_kg_per_m: 10.5939
+    target_kg: 0.053
+    fixed_in_segment_kg: 1.2617
+    structural_length_m: 0.005
+    class_density_kg_m3: 301.2
+    density_kg_m3: 301.2
+    r_m: 0.02366
+    r_cap_m: 0.033333
+    emitted_member_kg: 0.0026
+    density_raised_at_cap: false
+    floored_at_5pct: true
+  left_ankle_link_link:
+    class: foot
+    basis: m = 0.1854 L^0 (n=42)
+    segment_root: left_ankle_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.120778
+    lambda_kg_per_m: 1.535
+    target_kg: 0.1854
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.012
+    class_density_kg_m3: 301.47
+    density_kg_m3: 2285.69
+    r_m: 0.046385
+    r_cap_m: 0.046385
+    emitted_member_kg: 0.1854
+    density_raised_at_cap: true
+    floored_at_5pct: false
+  left_bicep_link_link:
+    class: upper_arm
+    basis: m = 9.397 L^1.83 (n=30)
+    segment_root: left_bicep_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.15
+    lambda_kg_per_m: 1.9397
+    target_kg: 0.2909
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.092158
+    class_density_kg_m3: 447.6
+    density_kg_m3: 447.6
+    r_m: 0.047383
+    r_cap_m: 0.056262
+    emitted_member_kg: 0.2909
+    density_raised_at_cap: false
+    floored_at_5pct: false
+  left_forearm_link_link:
+    class: forearm
+    basis: m = 0.2156 L^0 (n=34)
+    segment_root: left_forearm_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.15
+    lambda_kg_per_m: 1.4372
+    target_kg: 0.2156
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.022555
+    class_density_kg_m3: 783.7
+    density_kg_m3: 1495.43
+    r_m: 0.045105
+    r_cap_m: 0.045105
+    emitted_member_kg: 0.2156
+    density_raised_at_cap: true
+    floored_at_5pct: false
+  left_hand_link_link:
+    class: hand
+    basis: m = 0.6244 L^0.332 (n=28)
+    segment_root: left_hand_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.09
+    lambda_kg_per_m: 3.1229
+    target_kg: 0.2811
+    fixed_in_segment_kg: 0.2992
+    structural_length_m: 0.09
+    class_density_kg_m3: 571.41
+    density_kg_m3: 571.41
+    r_m: 0.009326
+    r_cap_m: 0.037801
+    emitted_member_kg: 0.0141
+    density_raised_at_cap: false
+    floored_at_5pct: true
+  left_lower_hip_link_link:
+    class: hip_link
+    basis: 'm = 2.582 L^1.05 (n=56), mass per metre held at its 0.177 m value: L=0.190
+      m is outside the fitted 0.02-0.1774 m'
+    segment_root: left_lower_hip_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.19
+    lambda_kg_per_m: 2.3758
+    target_kg: 0.4514
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.025634
+    class_density_kg_m3: 406.05
+    density_kg_m3: 1770.78
+    r_m: 0.056262
+    r_cap_m: 0.056262
+    emitted_member_kg: 0.4514
+    density_raised_at_cap: true
+    floored_at_5pct: false
+  left_lower_leg_link_link:
+    class: shank
+    basis: m = 4.113 L^1.68 (n=50)
+    segment_root: left_lower_leg_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.2
+    lambda_kg_per_m: 1.3718
+    target_kg: 0.2744
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.084315
+    class_density_kg_m3: 532.88
+    density_kg_m3: 532.88
+    r_m: 0.044088
+    r_cap_m: 0.056262
+    emitted_member_kg: 0.2744
+    density_raised_at_cap: false
+    floored_at_5pct: false
+  left_lower_shoulder_link_link:
+    class: shoulder_link
+    basis: m = 1.183 L^0.757 (n=44)
+    segment_root: left_lower_shoulder_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.19
+    lambda_kg_per_m: 1.7706
+    target_kg: 0.3364
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.025634
+    class_density_kg_m3: 344.87
+    density_kg_m3: 1319.74
+    r_m: 0.056262
+    r_cap_m: 0.056262
+    emitted_member_kg: 0.3364
+    density_raised_at_cap: true
+    floored_at_5pct: false
+  left_lower_wrist_link_link:
+    class: wrist_link
+    basis: m = 2.328 L^0.923 (n=30)
+    segment_root: left_lower_wrist_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.09
+    lambda_kg_per_m: 2.8002
+    target_kg: 0.252
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.01179
+    class_density_kg_m3: 630.17
+    density_kg_m3: 4761.68
+    r_m: 0.037801
+    r_cap_m: 0.037801
+    emitted_member_kg: 0.252
+    density_raised_at_cap: true
+    floored_at_5pct: false
+  left_upper_hip_link_link:
+    class: hip_link
+    basis: m = 2.582 L^1.05 (n=56)
+    segment_root: left_upper_hip_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.1
+    lambda_kg_per_m: 2.311
+    target_kg: 0.2311
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.042158
+    class_density_kg_m3: 406.05
+    density_kg_m3: 551.26
+    r_m: 0.056262
+    r_cap_m: 0.056262
+    emitted_member_kg: 0.2311
+    density_raised_at_cap: true
+    floored_at_5pct: false
+  left_upper_leg_link_link:
+    class: thigh
+    basis: m = 13.85 L^1.36 (n=54)
+    segment_root: left_upper_leg_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.2
+    lambda_kg_per_m: 7.7701
+    target_kg: 1.554
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.142158
+    class_density_kg_m3: 782.21
+    density_kg_m3: 1099.29
+    r_m: 0.056262
+    r_cap_m: 0.056262
+    emitted_member_kg: 1.554
+    density_raised_at_cap: true
+    floored_at_5pct: false
+  left_upper_shoulder_link_link:
+    class: shoulder_link
+    basis: m = 1.183 L^0.757 (n=44)
+    segment_root: left_upper_shoulder_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.13
+    lambda_kg_per_m: 1.9414
+    target_kg: 0.2524
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.021896
+    class_density_kg_m3: 344.87
+    density_kg_m3: 1159.09
+    r_m: 0.056262
+    r_cap_m: 0.056262
+    emitted_member_kg: 0.2524
+    density_raised_at_cap: true
+    floored_at_5pct: false
+  left_upper_wrist_link_link:
+    class: wrist_link
+    basis: m = 2.328 L^0.923 (n=30)
+    segment_root: left_upper_wrist_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.06
+    lambda_kg_per_m: 2.8886
+    target_kg: 0.1733
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.020895
+    class_density_kg_m3: 630.17
+    density_kg_m3: 1847.72
+    r_m: 0.037801
+    r_cap_m: 0.037801
+    emitted_member_kg: 0.1733
+    density_raised_at_cap: true
+    floored_at_5pct: false
+  lower_core_link_link:
+    class: waist_link
+    basis: 'm = 0.6934 L^0 (n=5), mass per metre held at its 0.119 m value: L=0.176
+      m is outside the fitted 0.0784-0.119 m'
+    segment_root: lower_core_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.176366
+    lambda_kg_per_m: 5.8269
+    target_kg: 1.0277
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.012
+    class_density_kg_m3: 504.09
+    density_kg_m3: 8611.87
+    r_m: 0.056262
+    r_cap_m: 0.056262
+    emitted_member_kg: 1.0277
+    density_raised_at_cap: true
+    floored_at_5pct: false
+  pelvis_link_link:
+    class: torso
+    basis: m = 45.14 L^1.49 (n=13)
+    segment_root: pelvis_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.154029
+    lambda_kg_per_m: 18.0968
+    target_kg: 2.7874
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.032158
+    class_density_kg_m3: 715.76
+    density_kg_m3: 8716.53
+    r_m: 0.056262
+    r_cap_m: 0.056262
+    emitted_member_kg: 2.7874
+    density_raised_at_cap: true
+    floored_at_5pct: false
+  right_ankle_link_link:
+    class: foot
+    basis: m = 0.1854 L^0 (n=42)
+    segment_root: right_ankle_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.120778
+    lambda_kg_per_m: 1.535
+    target_kg: 0.1854
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.012
+    class_density_kg_m3: 301.47
+    density_kg_m3: 2285.69
+    r_m: 0.046385
+    r_cap_m: 0.046385
+    emitted_member_kg: 0.1854
+    density_raised_at_cap: true
+    floored_at_5pct: false
+  right_bicep_link_link:
+    class: upper_arm
+    basis: m = 9.397 L^1.83 (n=30)
+    segment_root: right_bicep_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.15
+    lambda_kg_per_m: 1.9397
+    target_kg: 0.2909
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.092158
+    class_density_kg_m3: 447.6
+    density_kg_m3: 447.6
+    r_m: 0.047383
+    r_cap_m: 0.056262
+    emitted_member_kg: 0.2909
+    density_raised_at_cap: false
+    floored_at_5pct: false
+  right_forearm_link_link:
+    class: forearm
+    basis: m = 0.2156 L^0 (n=34)
+    segment_root: right_forearm_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.15
+    lambda_kg_per_m: 1.4372
+    target_kg: 0.2156
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.022555
+    class_density_kg_m3: 783.7
+    density_kg_m3: 1495.43
+    r_m: 0.045105
+    r_cap_m: 0.045105
+    emitted_member_kg: 0.2156
+    density_raised_at_cap: true
+    floored_at_5pct: false
+  right_hand_link_link:
+    class: hand
+    basis: m = 0.6244 L^0.332 (n=28)
+    segment_root: right_hand_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.09
+    lambda_kg_per_m: 3.1229
+    target_kg: 0.2811
+    fixed_in_segment_kg: 0.2992
+    structural_length_m: 0.09
+    class_density_kg_m3: 571.41
+    density_kg_m3: 571.41
+    r_m: 0.009326
+    r_cap_m: 0.037801
+    emitted_member_kg: 0.0141
+    density_raised_at_cap: false
+    floored_at_5pct: true
+  right_lower_hip_link_link:
+    class: hip_link
+    basis: 'm = 2.582 L^1.05 (n=56), mass per metre held at its 0.177 m value: L=0.190
+      m is outside the fitted 0.02-0.1774 m'
+    segment_root: right_lower_hip_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.19
+    lambda_kg_per_m: 2.3758
+    target_kg: 0.4514
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.025634
+    class_density_kg_m3: 406.05
+    density_kg_m3: 1770.78
+    r_m: 0.056262
+    r_cap_m: 0.056262
+    emitted_member_kg: 0.4514
+    density_raised_at_cap: true
+    floored_at_5pct: false
+  right_lower_leg_link_link:
+    class: shank
+    basis: m = 4.113 L^1.68 (n=50)
+    segment_root: right_lower_leg_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.2
+    lambda_kg_per_m: 1.3718
+    target_kg: 0.2744
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.084315
+    class_density_kg_m3: 532.88
+    density_kg_m3: 532.88
+    r_m: 0.044088
+    r_cap_m: 0.056262
+    emitted_member_kg: 0.2744
+    density_raised_at_cap: false
+    floored_at_5pct: false
+  right_lower_shoulder_link_link:
+    class: shoulder_link
+    basis: m = 1.183 L^0.757 (n=44)
+    segment_root: right_lower_shoulder_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.19
+    lambda_kg_per_m: 1.7706
+    target_kg: 0.3364
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.025634
+    class_density_kg_m3: 344.87
+    density_kg_m3: 1319.74
+    r_m: 0.056262
+    r_cap_m: 0.056262
+    emitted_member_kg: 0.3364
+    density_raised_at_cap: true
+    floored_at_5pct: false
+  right_lower_wrist_link_link:
+    class: wrist_link
+    basis: m = 2.328 L^0.923 (n=30)
+    segment_root: right_lower_wrist_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.09
+    lambda_kg_per_m: 2.8002
+    target_kg: 0.252
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.01179
+    class_density_kg_m3: 630.17
+    density_kg_m3: 4761.68
+    r_m: 0.037801
+    r_cap_m: 0.037801
+    emitted_member_kg: 0.252
+    density_raised_at_cap: true
+    floored_at_5pct: false
+  right_upper_hip_link_link:
+    class: hip_link
+    basis: m = 2.582 L^1.05 (n=56)
+    segment_root: right_upper_hip_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.1
+    lambda_kg_per_m: 2.311
+    target_kg: 0.2311
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.042158
+    class_density_kg_m3: 406.05
+    density_kg_m3: 551.26
+    r_m: 0.056262
+    r_cap_m: 0.056262
+    emitted_member_kg: 0.2311
+    density_raised_at_cap: true
+    floored_at_5pct: false
+  right_upper_leg_link_link:
+    class: thigh
+    basis: m = 13.85 L^1.36 (n=54)
+    segment_root: right_upper_leg_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.2
+    lambda_kg_per_m: 7.7701
+    target_kg: 1.554
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.142158
+    class_density_kg_m3: 782.21
+    density_kg_m3: 1099.29
+    r_m: 0.056262
+    r_cap_m: 0.056262
+    emitted_member_kg: 1.554
+    density_raised_at_cap: true
+    floored_at_5pct: false
+  right_upper_shoulder_link_link:
+    class: shoulder_link
+    basis: m = 1.183 L^0.757 (n=44)
+    segment_root: right_upper_shoulder_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.13
+    lambda_kg_per_m: 1.9414
+    target_kg: 0.2524
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.021896
+    class_density_kg_m3: 344.87
+    density_kg_m3: 1159.09
+    r_m: 0.056262
+    r_cap_m: 0.056262
+    emitted_member_kg: 0.2524
+    density_raised_at_cap: true
+    floored_at_5pct: false
+  right_upper_wrist_link_link:
+    class: wrist_link
+    basis: m = 2.328 L^0.923 (n=30)
+    segment_root: right_upper_wrist_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.06
+    lambda_kg_per_m: 2.8886
+    target_kg: 0.1733
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.020895
+    class_density_kg_m3: 630.17
+    density_kg_m3: 1847.72
+    r_m: 0.037801
+    r_cap_m: 0.037801
+    emitted_member_kg: 0.1733
+    density_raised_at_cap: true
+    floored_at_5pct: false
+  torso_roll_link_link:
+    class: waist_link
+    basis: 'm = 0.6934 L^0 (n=5), mass per metre held at its 0.078 m value: L=0.070
+      m is outside the fitted 0.0784-0.119 m'
+    segment_root: torso_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.069842
+    lambda_kg_per_m: 8.8445
+    target_kg: 0.6177
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.012
+    class_density_kg_m3: 504.09
+    density_kg_m3: 5176.46
+    r_m: 0.056262
+    r_cap_m: 0.056262
+    emitted_member_kg: 0.6177
+    density_raised_at_cap: true
+    floored_at_5pct: false
+  upper_core_link_link:
+    class: waist_link
+    basis: 'm = 0.6934 L^0 (n=5), mass per metre held at its 0.078 m value: L=0.070
+      m is outside the fitted 0.0784-0.119 m'
+    segment_root: upper_core_link
+    share_of_segment: 1.0
+    joint_to_joint_m: 0.07
+    lambda_kg_per_m: 8.8445
+    target_kg: 0.6191
+    fixed_in_segment_kg: 0.0
+    structural_length_m: 0.012158
+    class_density_kg_m3: 504.09
+    density_kg_m3: 5120.85
+    r_m: 0.056262
+    r_cap_m: 0.056262
+    emitted_member_kg: 0.6191
+    density_raised_at_cap: true
+    floored_at_5pct: false
+foot_render:
+  left_foot_link_box:
+    ankle_to_sole_m: 0.09
+    foot_h_measured_m: 0.09
+    ankle_motor_r_m: 0.056935
+    riser_height_m: 0.07
+    riser_radius_m: 0.039427
+    plate_thickness_m: 0.02
+    plate_rho_kg_m3: 301.47
+    plate_mass_kg: 1.302331
+    ankle_to_sole_deficit_m: 0.0
+  right_foot_link_box:
+    ankle_to_sole_m: 0.09
+    foot_h_measured_m: 0.09
+    ankle_motor_r_m: 0.056935
+    riser_height_m: 0.07
+    riser_radius_m: 0.039427
+    plate_thickness_m: 0.02
+    plate_rho_kg_m3: 301.47
+    plate_mass_kg: 1.302331
+    ankle_to_sole_deficit_m: 0.0
+xml_roundtrip:
+  written_mass_kg: 125.991929
+  in_memory_mass_kg: 125.992027
+  relative_drift: 7.77e-07
+  note: MuJoCo writes 6 significant figures; this is the cost of that rounding, not
+    a modelling difference
+warnings:
+- 'head_link_link: the 1.262 kg already in the segment exceeds the head trend''s 0.053
+  kg, so the member is floored at 5% of the target'
+- "left_ankle_link_link: to weigh its 0.185 kg share of the foot trend inside the\
+  \ actuators it joins, the member's density is 2286 kg/m\xB3 against the class's\
+  \ 301"
+- 'left_hand_link_link: the 0.299 kg already in the segment exceeds the hand trend''s
+  0.281 kg, so the member is floored at 5% of the target'
+- "left_lower_hip_link_link: to weigh its 0.451 kg share of the hip_link trend inside\
+  \ the actuators it joins, the member's density is 1771 kg/m\xB3 against the class's\
+  \ 406"
+- "left_lower_shoulder_link_link: to weigh its 0.336 kg share of the shoulder_link\
+  \ trend inside the actuators it joins, the member's density is 1320 kg/m\xB3 against\
+  \ the class's 345"
+- "left_lower_wrist_link_link: to weigh its 0.252 kg share of the wrist_link trend\
+  \ inside the actuators it joins, the member's density is 4762 kg/m\xB3 against the\
+  \ class's 630"
+- "left_upper_shoulder_link_link: to weigh its 0.252 kg share of the shoulder_link\
+  \ trend inside the actuators it joins, the member's density is 1159 kg/m\xB3 against\
+  \ the class's 345"
+- "left_upper_wrist_link_link: to weigh its 0.173 kg share of the wrist_link trend\
+  \ inside the actuators it joins, the member's density is 1848 kg/m\xB3 against the\
+  \ class's 630"
+- "lower_core_link_link: to weigh its 1.028 kg share of the waist_link trend inside\
+  \ the actuators it joins, the member's density is 8612 kg/m\xB3 against the class's\
+  \ 504"
+- "pelvis_link_link: to weigh its 2.787 kg share of the torso trend inside the actuators\
+  \ it joins, the member's density is 8717 kg/m\xB3 against the class's 716"
+- "right_ankle_link_link: to weigh its 0.185 kg share of the foot trend inside the\
+  \ actuators it joins, the member's density is 2286 kg/m\xB3 against the class's\
+  \ 301"
+- 'right_hand_link_link: the 0.299 kg already in the segment exceeds the hand trend''s
+  0.281 kg, so the member is floored at 5% of the target'
+- "right_lower_hip_link_link: to weigh its 0.451 kg share of the hip_link trend inside\
+  \ the actuators it joins, the member's density is 1771 kg/m\xB3 against the class's\
+  \ 406"
+- "right_lower_shoulder_link_link: to weigh its 0.336 kg share of the shoulder_link\
+  \ trend inside the actuators it joins, the member's density is 1320 kg/m\xB3 against\
+  \ the class's 345"
+- "right_lower_wrist_link_link: to weigh its 0.252 kg share of the wrist_link trend\
+  \ inside the actuators it joins, the member's density is 4762 kg/m\xB3 against the\
+  \ class's 630"
+- "right_upper_shoulder_link_link: to weigh its 0.252 kg share of the shoulder_link\
+  \ trend inside the actuators it joins, the member's density is 1159 kg/m\xB3 against\
+  \ the class's 345"
+- "right_upper_wrist_link_link: to weigh its 0.173 kg share of the wrist_link trend\
+  \ inside the actuators it joins, the member's density is 1848 kg/m\xB3 against the\
+  \ class's 630"
+- "torso_roll_link_link: to weigh its 0.618 kg share of the waist_link trend inside\
+  \ the actuators it joins, the member's density is 5176 kg/m\xB3 against the class's\
+  \ 504"
+- "upper_core_link_link: to weigh its 0.619 kg share of the waist_link trend inside\
+  \ the actuators it joins, the member's density is 5121 kg/m\xB3 against the class's\
+  \ 504"
+- actuator_mass_fraction = 0.733 is outside measured range (measured median 0.537,
+  p10-p90 0.460-0.641, n=29 humanoids).
+- "total_mass_vs_size_kg = 125.8 kg is outside 2\u03C3 of the humanoid mass-vs-size\
+  \ law (predicts 52.1 kg for z_span_m = 1.29 m)."

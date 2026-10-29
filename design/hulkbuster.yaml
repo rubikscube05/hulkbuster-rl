@@ -1,0 +1,86 @@
+# hulkbuster design variant: overrides on src/draft/robots/humanoid/parameters.yaml.
+# Generate: python scripts/generate_robot.py --robot humanoid \
+#     --overrides experiments/humanoid_variants/hulkbuster.yaml \
+#     --output-dir generated/hulkbuster --fixed-output-dir
+#
+# A squat, wide, high-torque humanoid for heavy tasks: short limb/torso spans,
+# a broad trunk and stance, large feet, and one heavy actuator class on every
+# proximal joint. The L-class is the brute-force actuator: peak torque 450 N·m
+# at N=80, which the trends price at ~3.8 kg and a ~64 mm package while staying
+# inside the catalogued torque-density p90 (no allow_hypothetical needed).
+
+# ── Short but broad: reduce vertical spans, widen the load paths ─────────────
+torso_length: 0.38
+neck_length: 0.10
+head_radius: 0.10
+pelvis_link_length: 0.09
+upper_core_link_length: 0.07
+upper_hip_link_length: 0.10
+lower_hip_link_length: 0.19
+upper_leg_link_length: 0.20
+lower_leg_link_length: 0.20
+upper_shoulder_link_length: 0.13
+lower_shoulder_link_length: 0.19
+bicep_link_length: 0.15
+forearm_link_length: 0.15
+upper_wrist_link_length: 0.06
+lower_wrist_link_length: 0.09
+hand_link_length: 0.09
+hand_r: 0.05
+
+# Broad shoulders/trunk and a wide hip span for a stable, powerful stance.
+shoulder_width: 0.50
+shoulder_depth: 0.28
+shoulder_motor_inset: 0.25
+hip_width: 0.25
+
+# Large feet: the ground contact for heavy payloads and pushing.
+foot_length: 0.30
+foot_width: 0.16
+foot_h: 0.09
+foot_plate_h: 0.02
+foot_offset_x: 0.04
+
+# Draw members at most of the actuator face (render only; density rescales).
+link_render_radius_scale: 0.85
+
+# ── One heavy class (L), one medium (M), one distal (S) ─────────────────────
+# Stated as torque + gear; speed follows the fitted speed trend.
+L_motor_mode: torque_gear
+L_motor_effort: 450.0
+L_motor_gear: 80.0
+M_motor_mode: torque_gear
+M_motor_effort: 220.0
+M_motor_gear: 50.0
+S_motor_mode: torque_gear
+S_motor_effort: 80.0
+S_motor_gear: 40.0
+
+# Gearbox losses are asserted, not fitted; scale with the larger class.
+L_motor_friction: 0.30
+M_motor_friction: 0.18
+S_motor_friction: 0.06
+L_motor_damping: 0.040
+M_motor_damping: 0.025
+S_motor_damping: 0.008
+
+# ── Route every proximal joint to the heavy class ───────────────────────────
+shoulder_pitch_mot: L
+shoulder_roll_mot: L
+shoulder_yaw_mot: L
+elbow_mot: L
+wrist_yaw_mot: S
+wrist_pitch_mot: S
+wrist_roll_mot: S
+torso_roll_mot: L
+torso_pitch_mot: L
+torso_yaw_mot: L
+hip_pitch_mot: L
+hip_roll_mot: L
+hip_yaw_mot: L
+knee_mot: L
+ankle_pitch_mot: L
+ankle_roll_mot: M
+
+# Structure clearances scale with the larger actuators.
+link_motor_penetration: 0.006

@@ -1,0 +1,83 @@
+{
+  "model": "runs/smoke/stage1/best/best_model.zip",
+  "stage": 1,
+  "episodes": 5,
+  "mean_return": 976.55,
+  "mean_length": 400.0,
+  "success_rate": 0.0,
+  "grasp_rate": 0.0,
+  "mean_max_box_z": 0.551,
+  "mean_min_hand_dist": 0.477,
+  "rows": [
+    {
+      "episode": 0,
+      "return": 976.55,
+      "length": 400,
+      "final_root_z": 1.217,
+      "final_up": 0.987,
+      "min_hand_dist": 0.477,
+      "final_hand_dist": 0.536,
+      "max_box_z": 0.551,
+      "final_box_z": 0.55,
+      "box_goal_dist": 0.72,
+      "grasped": 0,
+      "success": 0
+    },
+    {
+      "episode": 1,
+      "return": 976.55,
+      "length": 400,
+      "final_root_z": 1.217,
+      "final_up": 0.987,
+      "min_hand_dist": 0.477,
+      "final_hand_dist": 0.536,
+      "max_box_z": 0.551,
+      "final_box_z": 0.55,
+      "box_goal_dist": 0.72,
+      "grasped": 0,
+      "success": 0
+    },
+    {
+      "episode": 2,
+      "return": 976.55,
+      "length": 400,
+      "final_root_z": 1.217,
+      "final_up": 0.987,
+      "min_hand_dist": 0.477,
+      "final_hand_dist": 0.536,
+      "max_box_z": 0.551,
+      "final_box_z": 0.55,
+      "box_goal_dist": 0.72,
+      "grasped": 0,
+      "success": 0
+    },
+    {
+      "episode": 3,
+      "return": 976.55,
+      "length": 400,
+      "final_root_z": 1.217,
+      "final_up": 0.987,
+      "min_hand_dist": 0.477,
+      "final_hand_dist": 0.536,
+      "max_box_z": 0.551,
+      "final_box_z": 0.55,
+      "box_goal_dist": 0.72,
+      "grasped": 0,
+      "success": 0
+    },
+    {
+      "episode": 4,
+      "return": 976.55,
+      "length": 400,
+      "final_root_z": 1.217,
+      "final_up": 0.987,
+      "min_hand_dist": 0.477,
+      "final_hand_dist": 0.536,
+      "max_box_z": 0.551,
+      "final_box_z": 0.55,
+      "box_goal_dist": 0.72,
+      "grasped": 0,
+      "success": 0
+    }
+  ]
+}
